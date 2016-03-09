@@ -1,0 +1,50 @@
+    1  apt-get install slapd ldap-utils
+    2  apt-get install phpldapadmin
+    3  cp /home/daw2/compartida/*.ldif /home/daw2/
+    4  cd /home/daw2/
+    5  ls
+    6  nano backend.examen.daw.ldif 
+    7  ldapadd -Y EXTERNAL -H ldapi:/// -f backend.examen.daw.ldif 
+    8  ldapsearch -x -b dc=examen,dc=daw
+    9  dpkg-reconfigure slapd
+   10  ldapsearch -x -b dc=examen,dc=daw
+   11  dpkg-reconfigure slapd
+   12  dpkg-reconfigure slapd
+   13  ldapsearch -x -b dc=examen,dc=daw
+   14  nano frontend.examen.daw.ldif 
+   15  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif 
+   16  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif 
+   17  nano frontend.examen.daw.ldif 
+   18  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif 
+   19  dpkg-reconfigure slapd
+   20  ldapsearch -x -b dc=examen,dc=daw
+   21  ldapsearch -x -b dc=examen,dc=daw
+   22  dpkg-reconfigure slapd
+   23  dpkg-reconfigure slapd
+   24  ldapsearch -x -b dc=examen,dc=daw
+   25  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif 
+   26  ldapsearch -x -W -D 'cn=admin,dc=examen,dc=daw'
+   27  ldapsearch -x -W -D 'cn=admin,dc=examen,dc=daw' -b "" -s base
+   28  /etc/init.d/slapd restart
+   29  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif 
+   30  service ldap restart
+   31* ldap restart
+   32  /etc/init.d/slapd stop
+   33  /etc/init.d/slapd start
+   34  nano /var/log/messages 
+   35  nano /var/log/syslog 
+   36  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif 
+   37  nano /var/log/syslog 
+   38  nano /var/log/syslog 
+   39  nano frontend.examen.daw.ldif 
+   40  /etc/init.d/slapd stop
+   41  /etc/init.d/slapd start
+   42  ldapadd -x -D cn=admin,dc=examen,dc=lan -f frontend.examen.daw.ldif
+   43  ldapadd -x -D cn=admin,dc=examen,dc=lan -W -f frontend.examen.daw.ldif
+   44  ldapadd -x -D cn=admin,dc=examen,dc=daw -W -f frontend.examen.daw.ldif
+   45  apt-get install phpldapadmin
+   46  nano /etc/phpldapadmin/config.php 
+   47  cp /etc/phpldapadmin/config.php examen/actividad5/
+   48  cp frontend.examen.daw.ldif examen/actividad5/
+   49  cp backend.examen.daw.ldif examen/actividad5/
+   50  history > examen/actividad5/act5.txt

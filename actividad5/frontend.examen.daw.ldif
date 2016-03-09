@@ -1,0 +1,62 @@
+# Crear el nodo raiz
+dn: dc=examen,dc=daw
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: examen daw
+dc: examen
+description: Jorge Escudero
+
+# Usuario administrador
+dn: cn=admin,dc=examen,dc=daw
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrador
+userPassword: ldap2015
+
+#unidad organizativa people
+dn: ou=people,dc=examen,dc=daw
+objectClass: organizationalUnit
+ou: people
+
+#unidad organizativa group
+dn: ou=groups,dc=examen,dc=daw
+objectClass: organizationalUnit
+ou: groups
+
+#dn: uid=neo,ou=people,dc=albarregas,dc=lan
+#objectClass: inetOrgPerson
+#objectClass: posixAccount
+#objectClass: shadowAccount
+#uid: neo
+#sn: Elegido
+#givenName: Neo
+#cn: Neo Elegido
+#displayName: Neo Elegido
+#uidNumber: 2000
+#gidNumber: 2000
+#userPassword: password
+#gecos: Neo Elegido
+#loginShell: /bin/bash
+#homeDirectory: /home/neo
+#shadowExpire: -1
+#shadowFlag: 0
+#shadowWarning: 7
+#shadowMin: 8
+#shadowMax: 999999
+#shadowLastChange: 10877
+#mail: neo.elegido@albarregas.lan
+#postalCode: 06800
+#l: Mérida
+#o: albarrgas org
+#mobile: +34 (0)7 xx xx xx xx
+#homePhone: +34 (0)1 xx xx xx xx
+#title: System Administrator
+#postalAddress:
+#initials: NE
+#
+#dn: cn=albarregas,ou=groups,dc=albarregas,dc=lan
+#objectClass: posixGroup
+#cn: albarregas
+#gidNumber: 2000

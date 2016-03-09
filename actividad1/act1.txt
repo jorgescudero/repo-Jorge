@@ -1,0 +1,31 @@
+    1  mkdir /home/daw2/examen
+    2  mkdir /home/daw2/examen/actividad1
+    3  mkdir /home/daw2/examen/actividad2
+    4  mkdir /home/daw2/examen/actividad3
+    5  mkdir /home/daw2/examen/actividad4
+    6  mkdir /home/daw2/examen/actividad5
+    7  mkdir /home/daw2/examen/actividad6
+    8  chown daw2:daw2 /home/daw2/examen/*
+    9  ls -la /home/daw2/examen/
+   10  chown daw2:daw2 /home/daw2/examen
+   11  ls -la /home/daw2/examen/
+   12  apt-get update
+   13  ifconfig 
+   14  /etc/init.d/networking restart
+   15  ping www.google.es
+   16  apt-get update
+   17  apt-get install apache
+   18  apt-get install apache2
+   19  apt-get update
+   20  nano /etc/apt/sources.list
+   21  apt-get update
+   22  apt-get install apache2
+   23  apt-get install samba
+   24  mkdir /home/daw2/compartida
+   25  chmod 777 /home/daw2/compartida/
+   26  nano /etc/samba/smb.conf 
+   27  /etc/init.d/samba restart
+   28  ifconfig 
+   29  ls
+   30  nano compartida/prueba.txt
+   31  history > examen/actividad1/act1.txt

@@ -1,0 +1,14 @@
+    1  apt-get install apache2
+    2  apt-get install mysql-server
+    3  ifconfig 
+    4  ifconfig 
+    5  cd /etc/apache2/sites-available/
+    6  ls
+    7  ae2ensite default-ssl.conf 
+    8  a2ensite default-ssl.conf 
+    9  /etc/init.d/apache2 restart
+   10  nano default-ssl.conf 
+   11  a2enmod ssl
+   12  /etc/init.d/apache2 restart
+   13  ls
+   14  history > /home/daw2/examen/actividad2/act2.txt

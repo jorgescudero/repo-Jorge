@@ -1,0 +1,52 @@
+    1  mysql -u root -p
+    2  mysql -u root -p
+    3  mkdir /home/escuela
+    4  chown -R 1200:1500 /home/escuela/
+    5  mkdir /home/escuela/profesor
+    6  mkdir /home/escuela/delegado
+    7  mkdir /home/escuela/alumno
+    8  ls -la /home/escuela
+    9  chown -R 1200:1500 /home/escuela/*
+   10  ls -la /home/escuela
+   11  chown -R 1201:1500 /home/escuela/delegado/
+   12  chown -R 1202:1500 /home/escuela/alumno/
+   13  chmod 775 /home/escuela/delegado/
+   14  chmod 775 /home/escuela/alumno/
+   15  ls -la /home/escuela
+   16  apt-get install proftpd
+   17  cat /etc/passwd
+   18  passwd ftp
+   19  apt-get install proftpd-mod-mysql
+   20  nano /etc/proftpd/proftpd.conf 
+   21  nano /etc/proftpd/proftpd.conf 
+   22  cp -r /etc/proftpd/* /home/daw2/compartida/
+   23  ls /home/daw2/compartida/
+   24  nano /etc/proftpd/proftpd.conf 
+   25  nano /etc/proftpd/modules.conf 
+   26  nano /etc/proftpd/sql.conf 
+   27  mysql -u userFtp -p
+   28  nano /etc/proftpd/sql.conf 
+   29  cp /etc/proftpd/proftpd.conf /home/daw2/examen/actividad4/
+   30  cp /etc/proftpd/modules.conf /home/daw2/examen/actividad4/
+   31  cp /etc/proftpd/sql.conf /home/daw2/examen/actividad4/
+   32  nano /etc/proftpd/sql.conf 
+   33  cp /etc/proftpd/sql.conf /home/daw2/examen/actividad4/
+   34  /etc/init.d/proftpd restart
+   35  nano /var/log/proftpd/proftpd_mysql.log 
+   36  nano /var/log/proftpd/proftpd.log 
+   37  nano /etc/proftpd/proftpd.conf 
+   38  nano /etc/shells 
+   39  cp /etc/shells /home/daw2/examen/actividad4/
+   40  /etc/init.d/proftpd restart
+   41  nano /etc/proftpd/proftpd.conf 
+   42  nano /home/escuela/profesor/profesor.txt
+   43  nano /home/escuela/alumno/alumno.txt
+   44  nano /home/escuela/delegado/delegado.txt
+   45  ls /home/escuela/
+   46  ls -la /home/escuela/
+   47  ls -la /home/escuela/profesor/
+   48  nano /etc/proftpd/proftpd.conf 
+   49  /etc/init.d/proftpd restart
+   50  cp /etc/proftpd/proftpd.conf /home/daw2/examen/actividad4/
+   51  cp -r /home/daw2/examen/actividad1 /home/daw2/compartida/
+   52  history > /home/daw2/examen/actividad4/act4.txt

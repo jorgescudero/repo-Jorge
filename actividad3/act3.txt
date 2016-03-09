@@ -1,0 +1,15 @@
+    1  apt-cache search tomcat
+    2  apt-cache search tomcat8
+    3  apt-get install tomcat8
+    4  nano /etc/tomcat8/web.xml 
+    5  ls
+    6  ls /etc/tomcat8/
+    7  nano /etc/tomcat8/catalina.properties 
+    8  nano /etc/tomcat8/server.xml 
+    9  nano /etc/tomcat8/server.xml 
+   10  cp /etc/tomcat8/server.xml /home/daw2/examen/actividad3/
+   11  nano /etc/tomcat8/tomcat-users.xml 
+   12  nano /etc/tomcat8/tomcat-users.xml 
+   13  /etc/init.d/tomcat8 restart
+   14  cp /etc/tomcat8/tomcat-users.xml /home/daw2/examen/actividad3/
+   15  history > /home/daw2/examen/actividad3/act3.txt

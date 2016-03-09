@@ -1,0 +1,6 @@
+AuthName		"Autenticacion"
+AuthType		Basic
+AuthBasicProvider	ldap
+AuthBasicAuthoritative	on
+AuthLDAPUrl		ldap://127.0.0.1/ou=people,dc=examen,dc=daw?uid
+Require			valid-user

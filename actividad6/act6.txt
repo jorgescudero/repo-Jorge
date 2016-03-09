@@ -1,0 +1,17 @@
+    1  cd /etc/apache2/mods-available/
+    2  a2enmod authz_ldap
+    3  a2enmod authnz_ldap
+    4  cd ..
+    5  nano sites-available/000-default.conf 
+    6  mkdir /var/www/html/privado
+    7  nano /var/www/html/privado/.htaccess
+    8  /etc/init.d/apache2 restart
+    9  nano sites-enabled/000-default.conf 
+   10  /etc/init.d/apache2 restart
+   11  nano sites-enabled/000-default.conf 
+   12  /etc/init.d/apache2 restart
+   13  nano /var/www/html/privado/index.html
+   14  cp /etc/apache2/sites-enabled/000-default.conf /home/daw2/examen/actividad6/
+   15  cp /var/www/html/privado/.htaccess /home/daw2/examen/actividad6/
+   16  cp /var/www/html/privado/index.html /home/daw2/examen/actividad6/
+   17  history > /home/daw2/examen/actividad6/act6.txt
